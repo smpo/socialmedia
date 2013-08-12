@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<title>Intro</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Stylesheets -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.core.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.default.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<!-- For IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+  </script>
+<![endif]-->
+
+<!-- Javascript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.3.0/mustache.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.10/alertify.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
+<script src="shortcut.js"></script>
+<script src="main.js"></script>
+<script src="tmpl_others.js"></script>
+
+</head>
+
+<body oncontextmenu="return false;">
+<div class="container">
+
+
+<div id="intro" style="display:none;" class="instr">
+  <h3>Welcome to this study</h3>
+
+  You will complete a number of simple tasks, together with other people, <br>
+  with whom you will be connected via the internet. 
+  <br><br>
+  First, all participants in the study will select personal "avatars" and <br>
+  write short texts to introduce themselves.
+  <br><br>
+  Before beginning the tasks, you will spend 3 minutes with the other <br>
+  people. During this time, you will be able to read and react to <br>
+  each-other's brief introductions.
+  <br><br>
+  Specific instructions will follow.<br><br>
+  <b>Thank you!</b><br><br>
+  <button type="submit" id="submit_intro">Continue</button>
+</div>
+
+
+
+<div id="name" style="display:none;" class="instr">
+	<h3>Please enter your name</h3>
+	Could be your first name, nickname, or initials<br><br>
+	<input type="text" id="username"  autocomplete="off" /><br>	<br>
+	<button type="submit"  id="submit_username">Submit</button>
+</div>
+
+
+
+<div id="avatar" style="display:none;">	
+	<h3>Please select an avatar</h3>
+	This avatar will represent you during the group task, but will not be linked to any of your responses. <br>Your choice of avatar will not be recorded or analyzed.
+	<br><br>
+	<div class="avatars"></div>
+	<br><button type="submit"  id="submit_avatar">Submit</button>
+	<br><br>
+</div>	
+
+
+
+<div id="text" style="display:none;" class="instr">	
+	<h3>Please introduce yourself </h3>
+	Please write a paragraph in which you introduce yourself to the rest of the group. <br>
+	Write something you would like to tell about yourself - anything you want to share.
+	<br><br>	
+	<textarea id="description" autocomplete="off" /></textarea><br>
+	<span id="count">Characters left: 400</span><br><br>
+	<button type="submit" id="submit_text">Submit</button>
+</div>	
+
+
+
+<div id="fb_intro" style="display:none;" class="instr">
+  <h3>Group Introduction</h3>
+  Soon after connecting, you should be able to see the other people's descriptions. <br>
+  You can read and react to the short introduction they wrote about themselves, by <br>
+  clicking a "like" button, similar to the "like" button on Facebook ("favorite" on Twitter,<br> 
+  &hearts; in Tumblr and Instagram, etc.) <br>
+  <br>
+  Even though your interaction is minimal, please try to form an impression of the <br>
+  people in the group. Try to imagine them in real life - how they might look <br>
+  or sound, what kind of people they are, how you would get along with them.
+  <br><br>The task will last 3 minutes and is very important to the study, so please be attentive,
+  <br>without switching pages, or doing unrelated tasks. Questions about the other people <br>might follow.
+  <br><br><b>If these instructions are clear, you can proceed to log in.</b><br>
+  <br>
+  <button type="submit"  id="submit_fb_intro">Log in</button>
+</div>
+
+
+
+<div id="fb_login" style="display:none;" class="instr">
+  <h3>Establishing connection</h3>
+  Please wait while you are being connected to the other participants in your group.<br><br>
+  <img class="load" src='ajax-loader.gif' id="loader">
+  <div id="msg_all_done" style="display:none;">
+  <br>
+  	<b>All participants are now connected and you are ready to proceed.</b><br><br>
+  	<button type="submit"  id="submit_fb_login">Continue</button>
+  </div>
+</div>
+
+
+<div id="task" style="display:none;">
+	<div id="countdown"><span class="secs" style="display: none;"></span>You can click "Like" if you have enjoyed somebody's description<br><br>time left:<br><span id="timer" class="cntr label label-info"></span>
+	<br>
+	<button type="submit" id='final-continue' style="display:none;">Continue</button>	
+	</div>
+</div>
+
+
+<script type="template/text" id="usertmp">
+  {{#posts}}
+    
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+    	<h3>{{username}}</h3>
+
+    	<div class="main">
+    		<p>{{text}}</p>
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    	Likes <span class="badge badge-custom userslikes" data-likes="{{likes}}" data-usernames="{{usernames}}">0</span>
+    </div>
+    </div>
+
+  {{/posts}}  
+</script>
+
+
+<script type="template/text" id="otherstmp">
+  {{#posts}}
+    <div class="entry">
+    <div class="tophalf">
+
+    	<img src="{{avatar}}" class="avatar">
+        <h3>{{username}}</h3>
+    	
+    	<div class="main">
+    		
+    		<p>{{text}}</p>
+    	</div>
+
+    	<br style="clear:both;">
+
+    </div>	
+
+    <div class="bottomhalf">
+    	Likes <span class="badge badge-custom otherslikes" data-likes="{{likes}}">0</span>
+    	<button type="submit" class="btn pull-right btn-like btn-custom btn-deround">Like <i class="icon-thumbs-up icon-white"></i></button>
+    </div>
+
+    </div>
+  {{/posts}}  
+</script>
+
+
+</body>
+</html>
