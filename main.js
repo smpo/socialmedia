@@ -353,7 +353,7 @@ $(function() {
 	if(!urlHasQuestionMark) {
 		window.redirect = window.redirect+"?redir=1";
 	}
-	alert(window.redirect);
+	//alert(window.redirect);
 
   }
   
