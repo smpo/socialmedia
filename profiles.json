@@ -1,3 +1,6 @@
+// **Group members profiles**   
+// Each profile consists of (1) avatar, (2) username, (3) personal description, (4) number of "likes" the profile will receive throughout the interaction
+	
 window.others = {
   "posts" : [
       {
@@ -16,7 +19,7 @@ window.others = {
         "avatar": "avatars/others/john.png",
         "username": "John",
         "text": "Hi there, I’m 57 years old, married, with two kids. I’ve been a computer programmer in the states for about 30 years, but don’t worry: I don’t have the dusty haircut, oversized buttoned shirt and nerdie big frame glasses. Looking forward to working with you all. Cheers, John",
-        "likes": [20000, 21000] //2
+		"likes": [20000, 21000] //2
       },
       {
         "avatar": "avatars/others/anca.png",

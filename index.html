@@ -1,5 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!DOCTYPE html>
+
+ <!-- 
+/* 
+  
+This document contains all instructions which appear in the paradigm, along with some basic functionality. You can change all text by following the instructions below. 
+
+If you don't have experience with programming, it is important that you alter only the plain text, as indicated in the instructions, and leave any functional elements intact.
+*/ 
+--> 
 
 <meta charset="utf-8">
 <title>Intro</title>
@@ -27,7 +35,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/2.1.08/jquery.masonry.min.js"></script>
 <script src="shortcut.js"></script>
 <script src="main.js"></script>
-<script src="tmpl_others.js"></script>
+<script type="text/javascript" src="profiles.json"></script>
 
 </head>
 
@@ -35,8 +43,17 @@
 <div class="container">
 
 
+
 <div id="intro" style="display:none;" class="instr">
-  <h3>Welcome to this study</h3>
+ <!-- 
+/* 
+  
+**Intro**
+---------
+You can edit this text using basic HTML elements for styling (e.g., <br>, <h3>).
+
+*/ 
+--> <h3>Welcome to this study</h3>
 
   You will complete a number of simple tasks, together with other people, <br>
   with whom you will be connected via the internet. 
@@ -56,8 +73,18 @@
 
 
 <div id="name" style="display:none;" class="instr">
+<!-- 
+/* 
+  
+**Username**
+---------
+You can edit the instructions text for entering usernames below.
+
+*/ 
+-->
 	<h3>Please enter your name</h3>
 	Could be your first name, nickname, or initials<br><br>
+	
 	<input type="text" id="username"  autocomplete="off" /><br>	<br>
 	<button type="submit"  id="submit_username">Submit</button>
 </div>
@@ -65,7 +92,15 @@
 
 
 <div id="avatar" style="display:none;">	
-	<h3>Please select an avatar</h3>
+<!-- 
+/* 
+  
+**Avatar choice**
+---------
+You can edit the instructions text. The text "Your choice of avatar will not be recorded or analyzed" depends on whether you record the choice of avatar.
+
+*/ 
+-->	<h3>Please select an avatar</h3>
 	This avatar will represent you during the group task, but will not be linked to any of your responses. <br>Your choice of avatar will not be recorded or analyzed.
 	<br><br>
 	<div class="avatars"></div>
@@ -74,9 +109,16 @@
 </div>	
 
 
-
 <div id="text" style="display:none;" class="instr">	
-	<h3>Please introduce yourself </h3>
+<!-- 
+/* 
+  
+**Description entry**
+---------
+You can edit the instructions text. 
+
+*/ 
+-->	<h3>Please introduce yourself </h3>
 	Please write a paragraph in which you introduce yourself to the rest of the group. <br>
 	Write something you would like to tell about yourself - anything you want to share.
 	<br><br>	
@@ -88,7 +130,15 @@
 
 
 <div id="fb_intro" style="display:none;" class="instr">
-  <h3>Group Introduction</h3>
+<!-- 
+/* 
+  
+**Task instructions**
+---------
+You can edit the instructions text. The prompt to try and form an impression of the other players is recommended in all ostacism paradigms. Defining the action of "liking" is also recommended. The information regarding task duration can be adjusted to match the actual duration you have set.
+
+*/ 
+-->  <h3>Group Introduction</h3>
   Soon after connecting, you should be able to see the other people's descriptions. <br>
   You can read and react to the short introduction they wrote about themselves, by <br>
   clicking a "like" button, similar to the "like" button on Facebook ("favorite" on Twitter,<br> 
@@ -118,6 +168,15 @@
 </div>
 
 
+<!-- 
+/* 
+  
+**In-task instructions and timer**
+---------
+You can edit the instructions text. 
+
+*/ 
+-->
 <div id="task" style="display:none;">
 	<div id="countdown"><span class="secs" style="display: none;"></span>You can click "Like" if you have enjoyed somebody's description<br><br>time left:<br><span id="timer" class="cntr label label-info"></span>
 	<br>
