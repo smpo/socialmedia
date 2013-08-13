@@ -319,7 +319,7 @@ $(function() {
     $('#final-continue').on('click', function() {
 
       // Redirect link
-      location.href = 'http://fppvu.qualtrics.com/SE/?SID='+window.qid+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
+      location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description);
 
     });
     
