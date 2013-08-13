@@ -109,7 +109,7 @@ On this page you can find:</p>
 <a name="set-it-up-on-your-own-computer-or-server" class="anchor" href="#set-it-up-on-your-own-computer-or-server"><span class="octicon octicon-link"></span></a>Set it up on your own computer or server</h3>
 
 <p>For more customization, such as modified task instructions, or different timing of the paradigm, you can download the source code of the paradigm.
-Download the code as a ZIP (or TAR) file and extract the files to your computer. To run the study, open the file "index.html" in an internet browser. By default, an internet connection will still be necessary as not all Javascript libraries are included in the ZIP file. </p>
+<a href="https://github.com/ostracism/socialmedia/zipball/master">Download the code as a ZIP</a> (or <a href="https://github.com/ostracism/socialmedia/tarball/master">TAR</a>) file and extract the files to your computer. To run the study, open the file "index.html" in an internet browser. By default, an internet connection will still be necessary as not all Javascript libraries are included in the ZIP file. </p>
 
 <p>By customizing the code, you can easily make changes to the following parameters: </p>
 
@@ -124,18 +124,23 @@ Download the code as a ZIP (or TAR) file and extract the files to your computer.
 <a name="to-adjust-various-settings" class="anchor" href="#to-adjust-various-settings"><span class="octicon octicon-link"></span></a>To adjust various settings:</h5>
 
 <ol>
-<li>Open the file main.js (from the folder on your computer) in a source code editor (e.g. <a href="http://notepad-plus-plus.org/">Notepad++</a>) </li>
+<li>Open the file <code>main.js</code> (from the folder on your computer) in a source code editor (e.g. <a href="http://notepad-plus-plus.org/">Notepad++</a>) </li>
 <li>In the beginning of the code, variables for settings are defined, including the length of the task, and the number of likes participants reveice in each condition. Comments explaining the variables are provided in the code.
 4 Change variables in the main.js file on your computer (using the editor), according to the instructions document</li>
 <li>Save the changes made to the main.js document</li>
-</ol><p>An overview of the all settings in main.js, including instructions.</p>
+</ol><p>Here, an overview of the all settings in main.js, including instructions is provided, as an online reference.</p>
+
+<h5>
+<a name="to-change-the-study-instructions" class="anchor" href="#to-change-the-study-instructions"><span class="octicon octicon-link"></span></a>To change the study instructions:</h5>
+
+<p>Similarly, to edit task instructions, open the file <code>index.html</code> on your computer with an edtitor. Edit the task instructions according to the instructions provided within the document, and save your changes.</p>
 
 <h5>
 <a name="to-change-the-group-member-profiles-descriptions-and-avatars" class="anchor" href="#to-change-the-group-member-profiles-descriptions-and-avatars"><span class="octicon octicon-link"></span></a>To change the group member profiles (descriptions and avatars):</h5>
 
-<p>Similarly, to change the group member profiles (descriptions and avatars) open the file profiles.js in a source code editor, and adjust the contents to your needs. </p>
+<p>To change the group member profiles (descriptions and avatars) open the file <code>profiles.json</code> in an editor, and adjust the contents to your needs. </p>
 
-<p>The following scheme applies to user profiles:</p>
+<p>The following scheme describes a member called Georgeee, his avatar, description and the likes he receives.</p>
 
 <div class="highlight"><pre><span class="p">{</span>
         <span class="nt">"avatar"</span><span class="p">:</span> <span class="s2">"avatars/others/george.png"</span><span class="p">,</span>
@@ -146,16 +151,6 @@ Download the code as a ZIP (or TAR) file and extract the files to your computer.
 </pre></div>
 
 <p>The avatars used in the previews are subject to copyrights and you will need to create your own avatars. The new avatars have to be 250x250px, placed in the subfolder "others" (located inside the folder "avatars" in the main study folder you extracted on your computer or server). The names of the image files should match the names in the source code (including whether the file extension is upper or lower case). For example, "avatars/others/george.png" will correspond to a file called "george.png" and placed in the subfolder others (avatar/others).</p>
-
-<h5>
-<a name="to-change-the-study-instructions" class="anchor" href="#to-change-the-study-instructions"><span class="octicon octicon-link"></span></a>To change the study instructions:</h5>
-
-<ol>
-<li>Open the file index.html (from the folder on your computer) in a source code editor (e.g. Notepad++)</li>
-<li>Open the Instructions-IndexHTML document:</li>
-<li>Change the text in the index.html file on your computer (using the editor), according to the instructions document</li>
-<li>Save the changes made to the index.html document</li>
-</ol>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/ostracism">ostracism</a></p>
