@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Socialmedia by ostracism</title>
+    <title>Social Media Ostracism paradigm by ostracism</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Socialmedia</h1>
-        <p>Social Media Ostracism Paradigm</p>
+        <h1>Social Media Ostracism paradigm</h1>
+        <p>A web-based experimental manipulation of ostracism and social exclusion, designed for research purposes.</p>
 
         <p class="view"><a href="https://github.com/ostracism/socialmedia">View the Project on GitHub <small>ostracism/socialmedia</small></a></p>
 
@@ -43,25 +43,27 @@ On this page you can find:</p>
 </ul><h3>
 <a name="try-it-out" class="anchor" href="#try-it-out"><span class="octicon octicon-link"></span></a>Try it out</h3>
 
-<p>To try out the Social Media Ostracism paradigm follow this link:
-<a href="http://ostracism.github.io/preview/index.html?c=1&amp;p=999">http://ostracism.github.io/preview/index.html?c=1&amp;p=999</a> (exclusion condition)
-<a href="http://ostracism.github.io/preview/index.html?c=2&amp;p=999">http://ostracism.github.io/preview/index.html?c=2&amp;p=999</a> (inclusion condition)</p>
+<p>To try out the Social Media Ostracism paradigm follow one of these links:</p>
 
-<h3>
+<ul>
+<li><a href="http://ostracism.github.io/preview/index.html?c=1&amp;p=999">Try exclusion condition</a></li>
+<li><a href="http://ostracism.github.io/preview/index.html?c=2&amp;p=999">Try inclusion condition</a></li>
+</ul><h3>
 <a name="more-about-the-paradigm" class="anchor" href="#more-about-the-paradigm"><span class="octicon octicon-link"></span></a>More about the paradigm</h3>
 
 <p>Social media ostracism is a type of social exclusion which happens via social media websites, such as Facebook, Twitter, blogging platforms, or forums. In the paradigm, feelings of exclusion are conveyed through the number of "likes" that people receive on their personal profiles during a group intro task. A detailed description of the procedure and report of the manipulation effects can be found in this manuscript: .. </p>
 
-<p>We recommend that you end the paradigm with an online survey, which contains manipulation checks, dependent measures, and/or connection to subsequent tasks. If the entire study online is conducted online and with no interruptions, the participants will be more likely to think that they are interacting with other participants (rather than computer scripts). </p>
+<p>We recommend that you end the paradigm with an online survey, which contains manipulation checks, dependent measures, and/or connection to subsequent tasks. If the entire study is conducted online and with no interruptions, the participants will be more likely to think that they are interacting with other participants (rather than computer scripts). </p>
 
 <p>The Social Media Ostracism paradigm was inspired by Cyberball - a virtual ball-tossing game. You can find out more about Cyberball and research on ostracism on <a href="https://cyberball.wikispaces.com/">https://cyberball.wikispaces.com/</a></p>
 
 <h3>
 <a name="use-it-in-an-experiment" class="anchor" href="#use-it-in-an-experiment"><span class="octicon octicon-link"></span></a>Use it in an experiment</h3>
 
-<p>To use the paradigm in your own experiment without additional customization, you will only need the following link:</p>
+<p>To use the paradigm in your own experiment without additional customization of instructions, or timing, you will only need to modify the following link:</p>
 
-<p><a href="http://ostracism.github.io/preview/index.html?c=XXXX&amp;p=YYYY&amp;qid=ZZZZ">http://ostracism.github.io/preview/index.html?c=XXXX&amp;p=YYYY&amp;qid=ZZZZ</a></p>
+<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=XX&amp;p=YY&amp;qid=ZZ
+</code></pre>
 
 <table>
 <thead><tr>
@@ -70,65 +72,89 @@ On this page you can find:</p>
 </tr></thead>
 <tbody>
 <tr>
-<td>XXXX</td>
+<td>XX</td>
 <td align="center">
 <code>1</code> for ostracism condition, <code>2</code> for inclusion, <code>3</code> for overinclusion</td>
 </tr>
 <tr>
-<td>YYYY</td>
+<td>YY</td>
 <td align="center">unique participant number</td>
 </tr>
 <tr>
-<td>ZZZZ</td>
-<td align="center">Encoded* survey ID</td>
+<td>ZZ</td>
+<td align="center">Encoded* survey link</td>
 </tr>
 </tbody>
-</table><p>e.g. <a href="http://ostracism.github.io/preview/index.html?c=1&amp;p=12&amp;qid=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT">http://ostracism.github.io/preview/index.html?c=1&amp;p=12&amp;qid=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT</a></p>
-
-<blockquote>
-<p>To encode your survey link, open <a href="http://meyerweb.com/eric/tools/dencoder/">http://meyerweb.com/eric/tools/dencoder/</a> , copy the active link to your survey, paste it, and press "Encode." Then copy the new, encoded link, and paste it in the url (in place of ZZZZ).</p>
+</table><blockquote>
+<p>To encode your survey link, open <a href="http://meyerweb.com/eric/tools/dencoder/">http://meyerweb.com/eric/tools/dencoder/</a> paste the link to your survey in the textbox, and press "Encode." Use the encoded survey link as part of the URL in place of ZZ. </p>
 </blockquote>
+
+<p>If you wanted to set up the study for participant number 5, who should be in the inclusion condition, and you want to redirect the participant to a Qualtrics questionaire available under the address <a href="http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT">http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT</a>, the link to the study should be as follows:</p>
+
+<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=2&amp;p=5&amp;qid=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT
+</code></pre>
+
+<p>After the paradigm is finished, the participant will be redirected to the survey link as specified by the parameter ZZ. Any survey link can be specified. The script will extend the survey link by additional variables that can be read out by the survey, mainly to pass on the condition, participant number. In addition, also information about the chosen avatar, the username and description provided by the participant are transmitted, these may be analysed in order to identify participants who did not take the paradigm seriously (e.g. nonsense description provided). </p>
+
+<p>In our example, the participant could be redirected to the following URL after the paradigm is finished:</p>
+
+<pre lang="markdown"><code>http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT&amp;c=2p=5&amp;a=1&amp;u=JohnDoe&amp;d=ABC
+</code></pre>
+
+<p>Which would mean that the sample participant no. 5, who was in condition 2, chose JohnDoe as a username and described himself with the text ABC.</p>
+
+<p><a href="Insert%20Link">Here you can download a sample Qualtrics questionaire</a>, that reads out the transmitted variables, and provides a number of follow-up questions as manipulation check. <a href="http://www.qualtrics.com/university/researchsuite/advanced-building/advanced-options-drop-down/import-and-export-surveys/">More information about how to import a questionaire into Qualtrics</a>.</p>
 
 <h3>
 <a name="set-it-up-on-your-own-computer-or-server" class="anchor" href="#set-it-up-on-your-own-computer-or-server"><span class="octicon octicon-link"></span></a>Set it up on your own computer or server</h3>
 
-<p>Download the XX.zip file and extract the files to your computer (unzip). To run the study, open the file "main.js" in an internet browser (internet connection is not necessary).</p>
+<p>For more customization, such as modified task instructions, or different timing of the paradigm, you can download the source code of the paradigm.
+Download the code as a ZIP (or TAR) file and extract the files to your computer. To run the study, open the file "index.html" in an internet browser. By default, an internet connection will still be necessary as not all Javascript libraries are included in the ZIP file. </p>
 
-<p>By customizing the code, you can make changes in the following parameters: </p>
+<p>By customizing the code, you can easily make changes to the following parameters: </p>
 
 <ul>
 <li>The task instructions</li>
 <li>Avatar pool from which the participant can choose their own avatar</li>
-<li>Number of people the participant "interacts" with </li>
+<li>Number of people the participant "interacts" with</li>
 <li>Profiles (avatars + descriptions) of other group members</li>
 <li>Number of "likes" received by the participant and other group members</li>
 <li>Change the word "like" to another word or symbol</li>
 </ul><h5>
-<a name="to-adjust-various-parameters" class="anchor" href="#to-adjust-various-parameters"><span class="octicon octicon-link"></span></a>To adjust various parameters:</h5>
+<a name="to-adjust-various-settings" class="anchor" href="#to-adjust-various-settings"><span class="octicon octicon-link"></span></a>To adjust various settings:</h5>
 
 <ol>
-<li>Open the file main.js (from the folder on your computer) in a source code editor (e.g. Notepad++) </li>
-<li>Open the Instructions-MainJS document: </li>
-<li>The code you see in the editor (main.js) matches the code you see on the right side of the instructions document </li>
-<li>Change the text in the main.js file on your computer (using the editor), according to the instructions document</li>
+<li>Open the file main.js (from the folder on your computer) in a source code editor (e.g. <a href="http://notepad-plus-plus.org/">Notepad++</a>) </li>
+<li>In the beginning of the code, variables for settings are defined, including the length of the task, and the number of likes participants reveice in each condition. Comments explaining the variables are provided in the code.
+4 Change variables in the main.js file on your computer (using the editor), according to the instructions document</li>
 <li>Save the changes made to the main.js document</li>
-</ol><h5>
+</ol><p>An overview of the all settings in main.js, including instructions.</p>
+
+<h5>
 <a name="to-change-the-group-member-profiles-descriptions-and-avatars" class="anchor" href="#to-change-the-group-member-profiles-descriptions-and-avatars"><span class="octicon octicon-link"></span></a>To change the group member profiles (descriptions and avatars):</h5>
 
-<ol>
-<li>Open the file tmpl_others.js (from the folder on your computer) in a source code editor (e.g. Notepad++) </li>
-<li>Open the Instructions-OthersJS document: </li>
-<li>Change the text in the index.html file on your computer (using the editor), according to the instructions document</li>
-<li>
-<p>Save the changes made to the index.html document</p>
+<p>Similarly, to change the group member profiles (descriptions and avatars) open the file profiles.js in a source code editor, and adjust the contents to your needs. </p>
+
+<p>The following scheme applies to user profiles:</p>
+
+<div class="highlight"><pre><span class="p">{</span>
+        <span class="nt">"avatar"</span><span class="p">:</span> <span class="s2">"avatars/others/george.png"</span><span class="p">,</span>
+        <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Georgeee"</span><span class="p">,</span>
+        <span class="nt">"text"</span><span class="p">:</span> <span class="s2">"I'm a 19 year old dude from Wisconsin (commence making fun of my accent). I love music and lately you can catch me listening to nothing but Joy Division, Echo &amp; the bunnymen, and the smiths. Besides music I like learning languages, psychology, drawing, and writing."</span><span class="p">,</span>
+        <span class="nt">"likes"</span><span class="p">:</span> <span class="p">[</span><span class="mi">45000</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="mi">110000</span><span class="p">,</span> <span class="mi">150000</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>The avatars used in the previews are subject to copyrights and you will need to create your own avatars. The new avatars have to be 250x250px, placed in the subfolder "others" (located inside the folder "avatars" in the main study folder you extracted on your computer or server). The names of the image files should match the names in the source code (including whether the file extension is upper or lower case). For example, "avatars/others/george.png" will correspond to a file called "george.png" and placed in the subfolder others (avatar/others).</p>
 
 <h5>
 <a name="to-change-the-study-instructions" class="anchor" href="#to-change-the-study-instructions"><span class="octicon octicon-link"></span></a>To change the study instructions:</h5>
-</li>
-<li><p>Open the file index.html (from the folder on your computer) in a source code editor (e.g. Notepad++) </p></li>
-<li><p>Open the Instructions-IndexHTML document: </p></li>
-<li><p>Change the text in the index.html file on your computer (using the editor), according to the instructions document</p></li>
-<li><p>Save the changes made to the index.html document</p></li>
+
+<ol>
+<li>Open the file index.html (from the folder on your computer) in a source code editor (e.g. Notepad++)</li>
+<li>Open the Instructions-IndexHTML document:</li>
+<li>Change the text in the index.html file on your computer (using the editor), according to the instructions document</li>
+<li>Save the changes made to the index.html document</li>
 </ol>
       </section>
       <footer>
