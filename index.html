@@ -62,7 +62,7 @@ On this page you can find:</p>
 
 <p>To use the paradigm in your own experiment without additional customization of instructions, or timing, you will only need to modify the following link:</p>
 
-<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=XX&amp;p=YY&amp;qid=ZZ
+<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=XX&amp;p=YY&amp;redirect=ZZ
 </code></pre>
 
 <table>
@@ -91,14 +91,14 @@ On this page you can find:</p>
 
 <p>If you wanted to set up the study for participant number 5, who should be in the inclusion condition, and you want to redirect the participant to a Qualtrics questionaire available under the address <a href="http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT">http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT</a>, the link to the study should be as follows:</p>
 
-<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=2&amp;p=5&amp;qid=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT
+<pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=2&amp;p=5&amp;redirect=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT
 </code></pre>
 
 <p>After the paradigm is finished, the participant will be redirected to the survey link as specified by the parameter <code>ZZ</code>. Any survey link can be specified. The script will extend the survey link by additional variables that can be read out by the survey, mainly to pass on the condition, participant number. In addition, also information about the chosen avatar, the username and description provided by the participant are transmitted, these may be analysed in order to identify participants who did not take the paradigm seriously (e.g. nonsense description provided). </p>
 
 <p>In our example, the participant could be redirected to the following URL after the paradigm is finished:</p>
 
-<pre lang="markdown"><code>http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT&amp;c=2p=5&amp;a=1&amp;u=JohnDoe&amp;d=ABC
+<pre lang="markdown"><code>http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT&amp;c=2p=5&amp;av=1&amp;u=JohnDoe&amp;d=ABC
 </code></pre>
 
 <p>Which would mean that the sample participant no. 5, who was in condition 2, chose JohnDoe as a username and described himself with the text ABC.</p>
@@ -145,8 +145,8 @@ On this page you can find:</p>
 <p>The following scheme describes a group member, his avatar, description and the likes he receives.</p>
 
 <div class="highlight"><pre><span class="p">{</span>
-        <span class="nt">"avatar"</span><span class="p">:</span> <span class="s2">"avatars/others/george.png"</span><span class="p">,</span>
         <span class="nt">"username"</span><span class="p">:</span> <span class="s2">"Georgeee"</span><span class="p">,</span>
+        <span class="nt">"avatar"</span><span class="p">:</span> <span class="s2">"avatars/others/george.png"</span><span class="p">,</span>
         <span class="nt">"text"</span><span class="p">:</span> <span class="s2">"I'm a 19 year old dude from Wisconsin (commence making fun of my accent). I love music and lately you can catch me listening to nothing but Joy Division, Echo &amp; the bunnymen, and the smiths. Besides music I like learning languages, psychology, drawing, and writing."</span><span class="p">,</span>
         <span class="nt">"likes"</span><span class="p">:</span> <span class="p">[</span><span class="mi">45000</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="mi">110000</span><span class="p">,</span> <span class="mi">150000</span><span class="p">]</span>
 <span class="p">}</span>
@@ -166,7 +166,7 @@ On this page you can find:</p>
 <h2>
 <a name="question-and-issues" class="anchor" href="#question-and-issues"><span class="octicon octicon-link"></span></a>Question and Issues</h2>
 
-<p>You can <a href="https://github.com/ostracism/socialmedia/issues/new">file a new question question or issue</a> using GitHub.</p>
+<p>You can <a href="https://github.com/ostracism/socialmedia/issues/new">submit a new question question or issue</a> using GitHub.</p>
 
 <h2>
 <a name="citation" class="anchor" href="#citation"><span class="octicon octicon-link"></span></a>Citation</h2>
