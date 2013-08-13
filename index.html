@@ -72,21 +72,21 @@ On this page you can find:</p>
 </tr></thead>
 <tbody>
 <tr>
-<td>XX</td>
+<td><code>XX</code></td>
 <td align="center">
 <code>1</code> for ostracism condition, <code>2</code> for inclusion, <code>3</code> for overinclusion</td>
 </tr>
 <tr>
-<td>YY</td>
+<td><code>YY</code></td>
 <td align="center">unique participant number</td>
 </tr>
 <tr>
-<td>ZZ</td>
+<td><code>ZZ</code></td>
 <td align="center">Encoded* survey link</td>
 </tr>
 </tbody>
 </table><blockquote>
-<p>To encode your survey link, open <a href="http://meyerweb.com/eric/tools/dencoder/">http://meyerweb.com/eric/tools/dencoder/</a> paste the link to your survey in the textbox, and press "Encode." Use the encoded survey link as part of the URL in place of ZZ. </p>
+<p>To encode your survey link, open <a href="http://ostracism.github.io/dencoder/">http://ostracism.github.io/dencoder/</a> paste the link to your survey in the textbox, and press "Encode." Use the encoded survey link as part of the URL in place of <code>ZZ</code>. </p>
 </blockquote>
 
 <p>If you wanted to set up the study for participant number 5, who should be in the inclusion condition, and you want to redirect the participant to a Qualtrics questionaire available under the address <a href="http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT">http://fppvu.qualtrics.com/SE/?SID=SV_a9u9MdnpIRuxctT</a>, the link to the study should be as follows:</p>
@@ -94,7 +94,7 @@ On this page you can find:</p>
 <pre lang="markdown"><code>http://ostracism.github.io/preview/index.html?c=2&amp;p=5&amp;qid=http%3A%2F%2Ffppvu.qualtrics.com%2FSE%2F%3FSID%3DSV_a9u9MdnpIRuxctT
 </code></pre>
 
-<p>After the paradigm is finished, the participant will be redirected to the survey link as specified by the parameter ZZ. Any survey link can be specified. The script will extend the survey link by additional variables that can be read out by the survey, mainly to pass on the condition, participant number. In addition, also information about the chosen avatar, the username and description provided by the participant are transmitted, these may be analysed in order to identify participants who did not take the paradigm seriously (e.g. nonsense description provided). </p>
+<p>After the paradigm is finished, the participant will be redirected to the survey link as specified by the parameter <code>ZZ</code>. Any survey link can be specified. The script will extend the survey link by additional variables that can be read out by the survey, mainly to pass on the condition, participant number. In addition, also information about the chosen avatar, the username and description provided by the participant are transmitted, these may be analysed in order to identify participants who did not take the paradigm seriously (e.g. nonsense description provided). </p>
 
 <p>In our example, the participant could be redirected to the following URL after the paradigm is finished:</p>
 
