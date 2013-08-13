@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Social Media Ostracism paradigm by ostracism</title>
+    <title>Social Media Ostracism Paradigm by ostracism</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Social Media Ostracism paradigm</h1>
+        <h1>Social Media Ostracism Paradigm</h1>
         <p>A web-based experimental manipulation of ostracism and social exclusion, designed for research purposes.</p>
 
         <p class="view"><a href="https://github.com/ostracism/socialmedia">View the Project on GitHub <small>ostracism/socialmedia</small></a></p>
@@ -109,7 +109,7 @@ On this page you can find:</p>
 <a name="set-it-up-on-your-own-computer-or-server" class="anchor" href="#set-it-up-on-your-own-computer-or-server"><span class="octicon octicon-link"></span></a>Set it up on your own computer or server</h3>
 
 <p>For more customization, such as modified task instructions, or different timing of the paradigm, you can download the source code of the paradigm.
-<a href="https://github.com/ostracism/socialmedia/zipball/master">Download the code as a ZIP</a> (or <a href="https://github.com/ostracism/socialmedia/tarball/master">TAR</a>) file and extract the files to your computer. To run the study, open the file "index.html" in an internet browser. By default, an internet connection will still be necessary as not all Javascript libraries are included in the ZIP file. </p>
+<a href="https://github.com/ostracism/socialmedia/zipball/master">Download the code as a ZIP</a> (or <a href="https://github.com/ostracism/socialmedia/tarball/master">TAR</a>) file and extract the files to your computer. To run the study, open the file <code>index.html</code> in an internet browser. By default, an internet connection will still be necessary as not all Javascript libraries are included in the ZIP file. </p>
 
 <p>By customizing the code, you can easily make changes to the following parameters: </p>
 
@@ -126,21 +126,23 @@ On this page you can find:</p>
 <ol>
 <li>Open the file <code>main.js</code> (from the folder on your computer) in a source code editor (e.g. <a href="http://notepad-plus-plus.org/">Notepad++</a>) </li>
 <li>In the beginning of the code, variables for settings are defined, including the length of the task, and the number of likes participants reveice in each condition. Comments explaining the variables are provided in the code.
-4 Change variables in the main.js file on your computer (using the editor), according to the instructions document</li>
-<li>Save the changes made to the main.js document</li>
-</ol><p>Here, an overview of the all settings in main.js, including instructions is provided, as an online reference.</p>
+4 Change variables in the <code>main.js</code> file on your computer (using the editor), according to the instructions document</li>
+<li>Save the changes made to the <code>main.js</code> document</li>
+</ol><p><a href="http://ostracism.github.io/annotated-mainjs/">Click here for an annotated version of main.js</a>, as an quick online reference.</p>
 
 <h5>
 <a name="to-change-the-study-instructions" class="anchor" href="#to-change-the-study-instructions"><span class="octicon octicon-link"></span></a>To change the study instructions:</h5>
 
 <p>Similarly, to edit task instructions, open the file <code>index.html</code> on your computer with an edtitor. Edit the task instructions according to the instructions provided within the document, and save your changes.</p>
 
+<p><a href="http://ostracism.github.io/annotated-indexhtml/">Click here for an annotated version of index.html</a>, as an quick online reference.</p>
+
 <h5>
 <a name="to-change-the-group-member-profiles-descriptions-and-avatars" class="anchor" href="#to-change-the-group-member-profiles-descriptions-and-avatars"><span class="octicon octicon-link"></span></a>To change the group member profiles (descriptions and avatars):</h5>
 
 <p>To change the group member profiles (descriptions and avatars) open the file <code>profiles.json</code> in an editor, and adjust the contents to your needs. </p>
 
-<p>The following scheme describes a member called Georgeee, his avatar, description and the likes he receives.</p>
+<p>The following scheme describes a group member, his avatar, description and the likes he receives.</p>
 
 <div class="highlight"><pre><span class="p">{</span>
         <span class="nt">"avatar"</span><span class="p">:</span> <span class="s2">"avatars/others/george.png"</span><span class="p">,</span>
@@ -150,7 +152,24 @@ On this page you can find:</p>
 <span class="p">}</span>
 </pre></div>
 
-<p>The avatars used in the previews are subject to copyrights and you will need to create your own avatars. The new avatars have to be 250x250px, placed in the subfolder "others" (located inside the folder "avatars" in the main study folder you extracted on your computer or server). The names of the image files should match the names in the source code (including whether the file extension is upper or lower case). For example, "avatars/others/george.png" will correspond to a file called "george.png" and placed in the subfolder others (avatar/others).</p>
+<p>According to this code, the group member will be called Georgeee, and he will have an avatar image with the filename george.png placed in the folder avatars, subfolder others. Georgeee will reveive 4 likes overall for his description, at 45 s, 50 s, 110 s and 150 s.</p>
+
+<p>The avatars used in the previews are not meant for redistribution and thus not included in the version for download. You will thus need to create your own avatars. Avatars in the previews were created using a <a href="http://pickaface.net/">free avatar generator available online</a>. All avatars have to be 250x250px, placed in the subfolder "others" (located inside the folder "avatars" in the main study folder you extracted on your computer or server). Note that the names of the image files must exactly match the names in the source code (including whether the file extension is upper or lower case). </p>
+
+<h5>
+<a name="running-the-study-from-your-own-server" class="anchor" href="#running-the-study-from-your-own-server"><span class="octicon octicon-link"></span></a>Running the study from your own server:</h5>
+
+<p>The task can be easily made available online, as it runs in a browser and has minimal server requirements. Any server that allows hosting of static webpages should work, and offers at least 5 MB of disk space should do, meaning that it can potentially be hosted for free. The files from the computer are transferred to the remote server for example by means of a FTP program. </p>
+
+<h2>
+<a name="question-and-issues" class="anchor" href="#question-and-issues"><span class="octicon octicon-link"></span></a>Question and Issues</h2>
+
+<p>You can file a <a href="https://github.com/ostracism/socialmedia/issues/new">new question question or issue</a> using GitHub, or contact the authors directly.</p>
+
+<h2>
+<a name="citation" class="anchor" href="#citation"><span class="octicon octicon-link"></span></a>Citation</h2>
+
+<p>Authors (2013). Social Media Ostracism Paradigm (version 1.0) [Software]. Available from <a href="https://github.com/ostracism/socialmedia">https://github.com/ostracism/socialmedia</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/ostracism">ostracism</a></p>
