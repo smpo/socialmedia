@@ -9,4 +9,4 @@ Johanna Ruff, and Steven Kraaijeveld (VU University), under the supervision of P
 Documentation
 ===========
 
-For documentation and previews visit http://ostracism.github.io/socialmedia/
+For documentation and previews visit http://smpo.github.io/socialmedia/
