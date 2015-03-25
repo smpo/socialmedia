@@ -7,7 +7,7 @@ This is an interactive experimental paradigm, designed to manipulate feelings of
 Documentation
 =============
 
-For documentation and previews visit http://smpo.github.io/socialmedia/
+For documentation and previews visit: http://smpo.github.io/socialmedia/
 
 
 Publication
